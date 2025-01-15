@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    filter: contrast(110%) brightness(105%);
+}
+
+header {
+    background-color: white;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header .palstine {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.palstine img {
+    height: 32px;
+    width: 50px;
+    margin-left: 10px;
+}
+
+.palstine h1 {
+    font-size: 16px;
+}
+
+nav {
+    background-color: black;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 10px;
+}
+
+nav .nav-logo {
+    height: 60px;
+    margin: 10px 0;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+    position: relative;
+    left: 0;
+}
+
+.searchInput {
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 250px;
+    height: 40px;
+    padding: 15px;
+    background-color: gray;
+}
+
+.searchInput::placeholder {
+    color: rgb(0, 0, 0);
+}
+
+.searchIcon {
+    position: relative;
+    right: 30px;
+}
+
+.nav-search ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.nav-search ul a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 18px;
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    transition: color 0.3s ease;
+}
+
+.nav-search ul a:hover {
+    color: green;
+}
+
+.wake a {
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    margin: 10px 0;
+    text-decoration: none;
+    background-color: green;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.my-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Jua", sans-serif;
+    color: green;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group.gender {
+    display: flex;
+    gap: 10px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: darkgreen;
+}
+
+footer {
+    display: flex;
+}
+
+.footerLeft {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.fMenuTitle {
+    font-size: 16px;
+}
+
+.fList {
+    padding: 0;
+    list-style: none;
+}
+
+.fListItem {
+    margin-bottom: 10px;
+    color: gray;
+    cursor: pointer;
+}
+
+.footerRight {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fInput {
+    padding: 5px;
+}
+
+.fButton {
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
+
+.fIcons {
+    display: flex;
+}
+
+.fIcon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.copyright {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 160px;
+    }
+
+    .search {
+        left: 129px;
+    }
+
+    .nav-search ul a {
+        font-size: 24px;
+    }
+
+    .wake a {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .searchInput {
+        width: 250px;
+    }
+}
